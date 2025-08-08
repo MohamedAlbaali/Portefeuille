@@ -608,7 +608,7 @@ footer a:hover {
     }
 
     .competencs-articls article {
-        width: 32%;
+        width: 49%;
     }
 }
 
@@ -619,6 +619,11 @@ footer a:hover {
         border-radius: 0px;
         flex-direction: column;
         align-items: center;
+        padding: 10px;
+    }
+
+    .info-pers {
+        margin: 10px;
     }
 
     .exp-inf {
@@ -630,26 +635,33 @@ footer a:hover {
         width: 100%;
         border-radius: 0px;
     }
+}
+
+/* الشاشات الصغيرة جدًا (موبايل قديم أو عرض أقل من 480px) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column-reverse;
+    }
+
+    .img-container {
+        /* display: none; */
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .sous-name {
+        font-size: 18px;
+    }
+
+    .wid40 {
+        width: auto;
+    }
 
     .competencs-articls article,
     .proj {
         width: 100%;
     }
 
-}
-
-/* الشاشات الصغيرة جدًا (موبايل قديم أو عرض أقل من 480px) */
-@media (max-width: 480px) {
-    header{
-        flex-direction: column-reverse;
-    }
-    .img-container{
-        /* display: none; */
-    }
-    .name{
-        font-size: 24px;
-    }
-    .sous-name{
-        font-size: 18px;
-    }
 }
