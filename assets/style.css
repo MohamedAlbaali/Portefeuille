@@ -434,11 +434,14 @@ header {
 .slider {
     position: relative;
     overflow: hidden;
+    height: 250px;
 }
 
 .slider img {
     width: 100%;
     display: none;
+    height: 100%;
+    object-fit: cover;
 }
 
 .slider img.active {
@@ -455,6 +458,11 @@ header {
     padding: 8px;
     cursor: pointer;
     border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slider .prev {
